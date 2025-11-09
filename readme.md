@@ -1,25 +1,29 @@
-⚙️ Key Learning Areas
-🔹 1. Azure AI Foundry (formerly OpenAI Studio)
-Overview of workspace, resources, and endpoints
-Model deployment & endpoint configuration
-Using playground for prompt experimentation
-Model fine-tuning basics and deployment governance
-🔹 2. Retrieval-Augmented Generation (RAG)
-Embeddings generation (text-embedding-ada-002)
-Vector database storage (FAISS, Chroma, Qdrant, or Azure Cognitive Search)
-Retrieve → Combine → Generate pattern
-Evaluating context precision and recall
-🔹 3. Security & Governance
-Azure role-based access control (RBAC)
-Token management and usage monitoring
-Compliance with Responsible AI principles
-💻 Enterprise Projects
-Project	Description	Stack
-Ticket Auto-Responder	Auto-suggest replies based on past tickets	Azure OpenAI + LangChain + SNOW
-Knowledge Copilot	Contextual Q&A over SharePoint docs	Azure Foundry + Cognitive Search
-Workflow Optimizer Agent	Suggest process actions	LangChain + Azure Functions
+🔹 1. Prompt Engineering
+Writing effective system, user, and context prompts
+Chain-of-thought and multi-turn conversation design
+Role-based prompting (assistant vs system roles)
+🔹 2. Application Development
+Integrating APIs (ServiceNow, Teams, SharePoint)
+Building UI with Streamlit or Flask
+Using LangChain for chaining logic and managing context
+Handling structured and unstructured data
+🔹 3. Code Structure
+enterprise-genai/
+├── main.py
+├── utils/
+│   ├── api_service.py
+│   ├── summarizer.py
+├── templates/
+├── data/
+└── .env
+💻 Hands-on Projects
+Project	Description	Key Tools
+ServiceNow AI Assistant	Fetch, summarize, and update incidents via API	Python + SNOW API + OpenAI
+Incident Summarizer	Summarize historical tickets	LangChain + Streamlit
+Document Q&A	Natural language search over internal docs	OpenAI + LangChain
+Teams Knowledge Bot	Teams-integrated chatbot	Azure Bot Service + LangChain
 🧩 Developer Labs
-Build embeddings and store in Chroma or Qdrant
-Implement RAG flow with LangChain retriever
-Deploy solution via Azure AI Foundry endpoint
-Add telemetry (prompt logs, token usage)
+Build and test ServiceNow integration
+Create Streamlit-based summarization app
+Store and recall context using LangChain Memory
+Deploy app on Azure App Service or Streamlit Cloud
